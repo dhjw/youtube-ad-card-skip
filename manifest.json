@@ -1,0 +1,22 @@
+{
+  "name": "YouTube Ad Card Skip",
+  "description": "Automatically click the Skip button on ad cards. Intended for use with YouTube Adblock by Friendly.",
+  "manifest_version": 3,
+  "version": "1.0",
+  "icons": {
+    "64": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://youtube.com/*",
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "jquery.js",
+        "cs.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
